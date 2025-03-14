@@ -5,7 +5,7 @@ const TestimonialsSection = () => {
   return (
     <div className="pb-14 px-8 md:px-0">
       <h2 className="text-3xl font-medium text-gray-800">Testimonials</h2>
-      <p className="md:text-base text-gray-500 mt-3">
+      <p className="md:text-xl text-gray-500 mt-3">
         Hear from our learners as they share their journeys of transformation,
         success, and how our <br />
         platform has made a difference in their lives.
@@ -46,9 +46,6 @@ const TestimonialsSection = () => {
               </div>
               <p className="text-gray-500 mt-5">{testimonial.feedback}</p>
             </div>
-            <a href="#" className="text-blue-500 underline px-5">
-              Read more
-            </a>
           </div>
         ))}
       </div>

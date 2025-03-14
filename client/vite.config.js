@@ -1,7 +1,15 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import tailwindcss from 'tailwindcss';
+import { defineConfig } from "vite";
+import path from "path";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react()],
+  esbuild: {
+    loader: "jsx", // Ensure JSX is handled correctly
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
 });
